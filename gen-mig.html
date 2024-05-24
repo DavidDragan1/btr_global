@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BTR Global</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Offical Website of BTR Global. Explore Our Services Today.">
+  <meta name="keywords" content="BTR, BTR Global, BTR Enterprises, BTR Consulting, Badrul Hussain, Tanvir Tayab, Rafsan Kamal">
+  <meta name="author" content="Web Tech Solutions UK Ltd. - David Dragan">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <style>
+
+
+    button {
+      display:block;
+      padding: 10px;
+      text-align: left;
+      border: none;
+      background: none;
+      
+    }
+
+    .tablink:hover {
+      background-color: var(--primary-color);
+      color: var(--background-color);
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.show {
+      display: flex;
+    }
+
+    .tab-content .w3-row {
+      display: flex; /* Use flexbox to arrange items */
+      flex-wrap: wrap; /* Allow wrapping to create multiple rows */
+    }
+
+    .tab-content .w3-row .w3-half {
+      width: 50%; /* Each column takes half of the container */
+      box-sizing: border-box; /* Include padding and border in the width calculation */
+    }
+
+    .tab-content .w3-row .w3-half button {
+      width: 100%; /* Buttons take full width of their container */
+    }
+
+  </style>
+</head>
+
+<body>
+<!-- top -->
+<div class="top">
+  <div class="l-wrapper">
+    <header class="header">
+      <a class="header--logo" href="index.html">
+        <p class="font-logo">BTR Global</p>
+      </a>
+
+      <a href="index.html" class="material-symbols-outlined w3-right">
+          undo
+      </a>
+    </header>
+  </div>
+</div>
+<!-- end top -->
+<div class="w3-content">
+  <h2>General Migration Services</h2>
+
+  <div class="w3-row">
+    <a href="javascript:void(0)" onclick="openTab(event, 'Visas');">
+      <div class="w3-quarter tablink w3-bottombar w3-padding">Visas</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openTab(event, 'BritishCitizenship');">
+      <div class="w3-quarter tablink w3-bottombar w3-padding">British Citizenship</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openTab(event, 'SettlementInUK');">
+      <div class="w3-quarter tablink w3-bottombar w3-padding">Settlement in the UK</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openTab(event, 'ImmigrationAppeals');">
+      <div class="w3-quarter tablink w3-bottombar w3-padding">Immigration Appeals</div>
+    </a>
+  </div>
+
+  <div id="Visas" class="w3-container tab-content">
+    <h2>Visas</h2>
+    <div class="w3-row ">
+      <div class="w3-half">
+        <button onclick="openLink(event, 'DependantVisa')">Dependant Visa</button>
+        <button onclick="openLink(event, 'SpouseVisa')">Spouse Visa</button>
+        <button onclick="openLink(event, 'UnmarriedPartnerVisa')">Unmarried Partner Visa</button>
+        <button onclick="openLink(event, 'GraduateVisa')">Graduate Visa</button>
+        <button onclick="openLink(event, 'ChildStudentVisa')">Child Student Visa</button>
+        <button onclick="openLink(event, 'StudentVisa')">Student Visa</button>
+        <button onclick="openLink(event, 'UKFianceVisa')">UK Fiance Visa</button>
+        <button onclick="openLink(event, 'TouristVisa')">Tourist Visa</button>
+        <button onclick="openLink(event, 'BusinessVisit')">Business Visit</button>
+        <button onclick="openLink(event, 'InnovatorFounderVisa')">Innovator Founder Visa</button>
+        <button onclick="openLink(event, 'SelfSponsorshipUK')">Self-Sponsorship UK</button>
+      </div>
+      <div class="w3-half">
+        <button onclick="openLink(event, 'ScaleupVisa')">Scaleup Visa</button>
+        <button onclick="openLink(event, 'ScaleupBusiness')">Scaleup Business</button>
+        <button onclick="openLink(event, 'SpecialistWorkerVisa')">Specialist Worker Visa</button>
+        <button onclick="openLink(event, 'UKExpansionWorkerVisa')">UK Expansion Worker Visa</button>
+        <button onclick="openLink(event, 'GraduateTraineeVisa')">Graduate Trainee Visa</button>
+        <button onclick="openLink(event, 'HealthCareVisa')">Health Care Visa</button>
+        <button onclick="openLink(event, 'SkilledWorkerVisa')">Skilled Worker Visa</button>
+        <button onclick="openLink(event, 'MinisterReligionVisa')">Minister of Religion Visa</button>
+        <button onclick="openLink(event, 'CharityWorkerVisa')">Charity Worker Visa</button>
+        <button onclick="openLink(event, 'ReligiousWorkerVisa')">Religious Worker Visa</button>
+        <button onclick="openLink(event, 'CreativeWorkerVisa')">Creative Worker Visa</button>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="BritishCitizenship" class="w3-container tab-content">
+    <div class="vertical-menu">
+      <h2>British Citizenship</h2>
+      <button onclick="openLink(event, 'BritishCitizenship')">British Citizenship</button>
+      <button onclick="openLink(event, 'Naturalisation')">Naturalisation</button>
+    </div>
+  </div>
+
+  <div id="SettlementInUK" class="w3-container tab-content">
+    <div class="vertical-menu">
+      <div class="w3-half">
+        <h2>EU Settlement Scheme</h2>
+        <button onclick="openLink(event, 'FamilyPermit')">Family Permit</button>
+        <button onclick="openLink(event, 'SettledStatus')">Settled Status</button>
+        <button onclick="openLink(event, 'PreSettledStatus')">Pre-Settled Status</button>
+        <button onclick="openLink(event, 'BNOStatus')">BNO Status</button>
+      </div>
+      <div class="w3-half">
+        <h2>Other Settlement Routes</h2>
+        <button onclick="openLink(event, 'TwentyYearRoute')">20-Year Private Life Route</button>
+        <button onclick="openLink(event, 'TenYearILR')">Indefinite Leave to Remain (10 Year Route)</button>
+        <button onclick="openLink(event, 'TwentyYearILR')">Indefinite Leave to Remain (20 Year Route)</button>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="ImmigrationAppeals" class="w3-container tab-content">
+    <div class="vertical-menu">
+      <h2>Immigration Appeals</h2>
+      <button onclick="openLink(event, 'AppealTribunal')">Appeal to the Tribunal</button>
+      <button onclick="openLink(event, 'AdminReview')">Administrative Review</button>
+      <button onclick="openLink(event, 'JudicialReview')">Judicial Review</button>
+    </div>
+  </div>
+</div>
+
+<script>
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      // Hide all tab contents
+      tabcontent = document.getElementsByClassName("tab-content");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      // Remove highlighting from all tab links
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace("w3-border-black", ""); 
+      }
+      // Display the content of the clicked tab and highlight the tab link
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.firstElementChild.className += " w3-border-black";
+    }
+
+    function openLink(evt, target) {
+    // Prevent the default action of the event
+    evt.preventDefault();
+    
+    // Get the URL from the target argument
+    var url = target + ".html";
+    
+    // Open a new tab with the specified URL
+    window.open(url, '_blank');
+}
+
+    
+
+
+</script>
+</body>
+</html>
