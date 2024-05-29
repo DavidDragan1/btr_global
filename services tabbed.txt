@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BTR Global</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Offical Website of BTR Global. Explore Our Services Today.">
+  <meta name="keywords" content="BTR, BTR Global, BTR Enterprises, BTR Consulting, Badrul Hussain, Tanvir Tayab, Rafsan Kamal">
+  <meta name="author" content="Web Tech Solutions UK Ltd. - David Dragan">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <style>
+    .vertical-menu {
+      width: 130px;
+      float: left;
+      margin-left: -130px;
+    }
+
+    .vertical-menu button {
+      display: block;
+      padding: 10px;
+      text-align: left;
+      border: none;
+      background: none;
+      width: 100%;
+    }
+
+    .vertical-menu button:hover {
+      background-color: var(--primary-color);
+      color: var(--background-color);
+    }
+
+    .active-tab {
+        background-color: var(--primary-color)!important;
+        color: var(--background-color);
+    }
+
+    .bar-tab-active {
+        background-color: #2e4353 !important;
+        color: black!important;
+    }
+
+    .tab-content {
+      margin-left: 120px;
+      display: none;
+    }
+
+    .tab-content.show {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="w3-content">
+  <h2>BTR Global Services</h2>
+
+  <div class="w3-row">
+    <a href="javascript:void(0)" onclick="openTab(event, 'Visas');">
+      <div class="w3-quarter tablink w3-bottombar  w3-hover-black w3-padding">Visas</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openTab(event, 'SponsorshipLicence');">
+      <div class="w3-quarter tablink w3-bottombar  w3-hover-black w3-padding">Sponsorship Licence</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openTab(event, 'EUSettlementScheme');">
+      <div class="w3-quarter tablink w3-bottombar  w3-hover-black w3-padding">EU Settlement Scheme</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openTab(event, 'BritishCitizenship');">
+      <div class="w3-quarter tablink w3-bottombar  w3-hover-black w3-padding">British Citizenship</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openTab(event, 'SettlementInUK');">
+      <div class="w3-quarter tablink w3-bottombar  w3-hover-black w3-padding">Settlement in the UK</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openTab(event, 'UKVICompliantHRSoftware');">
+      <div class="w3-quarter tablink w3-bottombar  w3-hover-black w3-padding">UKVI Compliant HR Software</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openTab(event, 'ImmigrationAppeals');">
+      <div class="w3-quarter tablink w3-bottombar  w3-hover-black w3-padding">Immigration Appeals</div>
+    </a>
+  </div>
+
+  <div id="Visas" class="w3-container tab-content">
+    <div class="vertical-menu">
+      <button onclick="openVerticalTab(event, 'DependantVisa')">Dependant Visa</button>
+      <button onclick="openVerticalTab(event, 'SpouseVisa')">Spouse Visa</button>
+      <button onclick="openVerticalTab(event, 'UnmarriedPartnerVisa')">Unmarried Partner Visa</button>
+      <button onclick="openVerticalTab(event, 'GraduateVisa')">Graduate Visa</button>
+      <button onclick="openVerticalTab(event, 'ChildStudentVisa')">Child Student Visa</button>
+      <button onclick="openVerticalTab(event, 'StudentVisa')">Student Visa</button>
+      <button onclick="openVerticalTab(event, 'UKFianceVisa')">UK Fiance Visa</button>
+      <button onclick="openVerticalTab(event, 'TouristVisa')">Tourist Visa</button>
+      <button onclick="openVerticalTab(event, 'BusinessVisit')">Business Visit</button>
+      <button onclick="openVerticalTab(event, 'InnovatorFounderVisa')">Innovator Founder Visa</button>
+      <button onclick="openVerticalTab(event, 'SelfSponsorshipUK')">Self-Sponsorship UK</button>
+      <button onclick="openVerticalTab(event, 'ScaleupVisa')">Scaleup Visa</button>
+      <button onclick="openVerticalTab(event, 'ScaleupBusiness')">Scaleup Business</button>
+      <button onclick="openVerticalTab(event, 'SpecialistWorkerVisa')">Specialist Worker Visa</button>
+      <button onclick="openVerticalTab(event, 'UKExpansionWorkerVisa')">UK Expansion Worker Visa</button>
+      <button onclick="openVerticalTab(event, 'GraduateTraineeVisa')">Graduate Trainee Visa</button>
+      <button onclick="openVerticalTab(event, 'HealthCareVisa')">Health Care Visa</button>
+      <button onclick="openVerticalTab(event, 'SkilledWorkerVisa')">Skilled Worker Visa</button>
+      <button onclick="openVerticalTab(event, 'MinisterReligionVisa')">Minister of Religion Visa</button>
+      <button onclick="openVerticalTab(event, 'CharityWorkerVisa')">Charity Worker Visa</button>
+      <button onclick="openVerticalTab(event, 'ReligiousWorkerVisa')">Religious Worker Visa</button>
+      <button onclick="openVerticalTab(event, 'CreativeWorkerVisa')">Creative Worker Visa</button>
+    </div>
+    <div class="tab-content" id="DependantVisa">Dependant Visa Content</div>
+    <div class="tab-content" id="SpouseVisa">Spouse Visa Content</div>
+    <div class="tab-content" id="UnmarriedPartnerVisa">Unmarried Partner Visa Content</div>
+    <div class="tab-content" id="GraduateVisa">Graduate Visa Content</div>
+    <div class="tab-content" id="ChildStudentVisa">Child Student Visa Content</div>
+    <div class="tab-content" id="StudentVisa">Student Visa Content</div>
+    <div class="tab-content" id="UKFianceVisa">UK Fiance Visa Content</div>
+    <div class="tab-content" id="TouristVisa">Tourist Visa Content</div>
+    <div class="tab-content" id="BusinessVisit">Business Visit Content</div>
+    <div class="tab-content" id="InnovatorFounderVisa">Innovator Founder Visa Content</div>
+    <div class="tab-content" id="SelfSponsorshipUK">Self-Sponsorship UK Content</div>
+    <div class="tab-content" id="ScaleupVisa">Scaleup Visa Content</div>
+    <div class="tab-content" id="ScaleupBusiness">Scaleup Business Content</div>
+    <div class="tab-content" id="SpecialistWorkerVisa">Specialist Worker Visa Content</div>
+    <div class="tab-content" id="UKExpansionWorkerVisa">UK Expansion Worker Visa Content</div>
+    <div class="tab-content" id="GraduateTraineeVisa">Graduate Trainee Visa Content</div>
+    <div class="tab-content" id="HealthCareVisa">Health Care Visa Content</div>
+    <div class="tab-content" id="SkilledWorkerVisa">Skilled Worker Visa Content</div>
+    <div class="tab-content" id="MinisterReligionVisa">Minister of Religion Visa Content</div>
+    <div class="tab-content" id="CharityWorkerVisa">Charity Worker Visa Content</div>
+    <div class="tab-content" id="ReligiousWorkerVisa">Religious Worker Visa Content</div>
+    <div class="tab-content" id="CreativeWorkerVisa">Creative Worker Visa Content</div>
+  </div>
+
+  <div id="SponsorshipLicence" class="w3-container tab-content">
+    <div class="vertical-menu">
+      <button onclick="openVerticalTab(event, 'SponsorshipLicenceApplication')">Application</button>
+      <button onclick="openVerticalTab(event, 'SponsorshipLicenceSuspension')">Suspension</button>
+      <button onclick="openVerticalTab(event, 'SponsorshipLicenceRenewal')">Renewal</button>
+    </div>
+    <div class="tab-content" id="SponsorshipLicenceApplication">Sponsorship Licence Application Content</div>
+    <div class="tab-content" id="SponsorshipLicenceSuspension">Sponsorship Licence Suspension Content</div>
+    <div class="tab-content" id="SponsorshipLicenceRenewal">Sponsorship Licence Renewal Content</div>
+  </div>
+
+  <div id="EUSettlementScheme" class="w3-container tab-content">
+    <div class="vertical-menu">
+      <button onclick="openVerticalTab(event, 'FamilyPermit')">Family Permit</button>
+      <button onclick="openVerticalTab(event, 'SettledStatus')">Settled Status</button>
+      <button onclick="openVerticalTab(event, 'PreSettledStatus')">Pre-Settled Status</button>
+      <button onclick="openVerticalTab(event, 'BNOStatus')">BNO Status</button>
+    </div>
+    <div class="tab-content" id="FamilyPermit">Family Permit Content</div>
+    <div class="tab-content" id="SettledStatus">Settled Status Content</div>
+    <div class="tab-content" id="PreSettledStatus">Pre-Settled Status Content</div>
+    <div class="tab-content" id="BNOStatus">BNO Status Content</div>
+  </div>
+
+  <div id="BritishCitizenship" class="w3-container tab-content">
+    <div class="vertical-menu">
+      <button onclick="openVerticalTab(event, 'BritishCitizenship')">British Citizenship</button>
+      <button onclick="openVerticalTab(event, 'Naturalisation')">Naturalisation</button>
+    </div>
+    <div class="tab-content" id="BritishCitizenship">British Citizenship Content</div>
+    <div class="tab-content" id="Naturalisation">Naturalisation Content</div>
+  </div>
+
+  <div id="SettlementInUK" class="w3-container tab-content">
+    <div class="vertical-menu">
+      <button onclick="openVerticalTab(event, 'TwentyYearRoute')">20-Year Private Life Route</button>
+      <button onclick="openVerticalTab(event, 'TenYearILR')">Indefinite Leave to Remain (10 Year Route)</button>
+      <button onclick="openVerticalTab(event, 'TwentyYearILR')">Indefinite Leave to Remain (20 Year Route)</button>
+    </div>
+    <div class="tab-content" id="TwentyYearRoute">20-Year Private Life Route Content</div>
+    <div class="tab-content" id="TenYearILR">Indefinite Leave to Remain (10 Year Route) Content</div>
+    <div class="tab-content" id="TwentyYearILR">Indefinite Leave to Remain (20 Year Route) Content</div>
+  </div>
+
+  <div id="UKVICompliantHRSoftware" class="w3-container tab-content">
+    <div class="vertical-menu">
+      <button onclick="openVerticalTab(event, 'CompliantHRSoftware')">Compliant HR Software</button>
+      <button onclick="openVerticalTab(event, 'ComplianceAudit')">Home Office Compliance Audit UK</button>
+      <button onclick="openVerticalTab(event, 'SponsorshipDuties')">Sponsorship Duties</button>
+    </div>
+    <div class="tab-content" id="CompliantHRSoftware">Compliant HR Software Content</div>
+    <div class="tab-content" id="ComplianceAudit">Home Office Compliance Audit UK Content</div>
+    <div class="tab-content" id="SponsorshipDuties">Sponsorship Duties Content</div>
+  </div>
+
+  <div id="ImmigrationAppeals" class="w3-container tab-content">
+    <div class="vertical-menu">
+      <button onclick="openVerticalTab(event, 'AppealTribunal')">Appeal to the Tribunal</button>
+      <button onclick="openVerticalTab(event, 'AdminReview')">Administrative Review</button>
+      <button onclick="openVerticalTab(event, 'JudicialReview')">Judicial Review</button>
+    </div>
+    <div class="tab-content" id="AppealTribunal">Appeal to the Tribunal Content</div>
+    <div class="tab-content" id="AdminReview">Administrative Review Content</div>
+    <div class="tab-content" id="JudicialReview">Judicial Review Content</div>
+  </div>
+</div>
+
+<script>
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      // Hide all tab contents
+      tabcontent = document.getElementsByClassName("tab-content");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      // Remove highlighting from all tab links
+      tablinks = document.getElementsByClassName("w3-bottombar");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace("bar-tab-active", ""); 
+      }
+      // Display the content of the clicked tab and highlight the tab link
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " bar-tab-active";
+    }
+    
+
+    function openVerticalTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        var parentContainer = evt.currentTarget.closest('.w3-container');
+        
+        // Hide all tab contents within the same group
+        tabcontent = parentContainer.querySelectorAll(".tab-content");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        // Remove highlighting from all vertical tab links within the same group
+        tablinks = parentContainer.querySelectorAll("button");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active-tab", ""); 
+        }
+
+        // Display the content of the clicked vertical tab and highlight the tab link
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active-tab";
+    }
+
+    // INCLUDE VIEWS
+    function includeHTML(targetId, filePath) {
+            fetch(filePath)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(targetId).innerHTML = data;
+                })
+                .catch(error => console.error('Error loading content:', error));
+        }
+
+        // Load content for each section
+        window.onload = function() {
+            includeHTML('DependantVisa', 'views/dependant_visa.html');
+            includeHTML('SpouseVisa', 'views/spouse_visa.html');
+            includeHTML('UnmarriedPartnerVisa', 'views/unmarried_partner_visa.html');
+            includeHTML('GraduateVisa', 'views/graduate_visa.html');
+            includeHTML('ChildStudentVisa', 'views/child_student_visa.html');
+            includeHTML('StudentVisa', 'views/student_visa.html');
+            includeHTML('UKFianceVisa', 'views/uk_fiance_visa.html');
+            includeHTML('TouristVisa', 'views/tourist_visa.html');
+            includeHTML('BusinessVisit', 'views/business_visit.html');
+            includeHTML('InnovatorFounderVisa', 'views/innovator_founder_visa.html');
+            includeHTML('SelfSponsorshipUK', 'views/self_sponsorship_uk.html');
+            includeHTML('ScaleupVisa', 'views/scaleup_visa.html');
+            includeHTML('ScaleupBusiness', 'views/scaleup_business.html');
+            includeHTML('SpecialistWorkerVisa', 'views/specialist_worker_visa.html');
+            includeHTML('UKExpansionWorkerVisa', 'views/uk_expansion_worker_visa.html');
+            includeHTML('GraduateTraineeVisa', 'views/graduate_trainee_visa.html');
+            includeHTML('HealthCareVisa', 'views/health_care_visa.html');
+            includeHTML('SkilledWorkerVisa', 'views/skilled_worker_visa.html');
+            includeHTML('MinisterReligionVisa', 'views/minister_religion_visa.html');
+            includeHTML('CharityWorkerVisa', 'views/charity_worker_visa.html');
+            includeHTML('ReligiousWorkerVisa', 'views/religious_worker_visa.html');
+            includeHTML('CreativeWorkerVisa', 'views/creative_worker_visa.html');
+        };
+</script>
+    
+    
+    
+    
+
+</body>
+</html>

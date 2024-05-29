@@ -20,12 +20,13 @@
       text-align: left;
       border: none;
       background: none;
-      
+      color: var(--primary-color);
     }
 
     .tablink:hover {
       background-color: var(--primary-color);
       color: var(--background-color);
+      text-decoration: underline;
     }
 
     .tab-content {
@@ -70,9 +71,8 @@
 </div>
 <!-- end top -->
 <div class="w3-content">
-  <h2>General Migration Services</h2>
-
   <div class="w3-row">
+    <h2>General Migration Services</h2>
     <a href="javascript:void(0)" onclick="openTab(event, 'Visas');">
       <div class="w3-quarter tablink w3-bottombar w3-padding">Visas</div>
     </a>
@@ -180,7 +180,7 @@
     evt.preventDefault();
     
     // Get the URL from the target argument
-    var url = target + ".html";
+    var url = "views/" + target.toLowerCase() + ".html";
     
     // Open a new tab with the specified URL
     window.open(url, '_blank');

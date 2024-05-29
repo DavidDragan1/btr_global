@@ -46,7 +46,7 @@
           </ul>
         </nav>
         <ul class="l-main-content main-content">
-          <li class="l-section section section--is-active">
+          <li class="l-section section section--is-active hero">
             <div class="intro">
               <div class="intro--banner">
                 <h1>Empowering<br>Global<br><em>Visionaires</em></h1>
@@ -54,7 +54,7 @@
                   <p>We offer expert legal counsel to keep you compliant and confident in your migration journey.</p>
                 </div>
                 
-                <button class="cta" style="color: #FF9F1C; text-shadow: 2px 2px 2px #000000;">Get Started
+                <button class="cta" style="color: var(--primary-color); text-shadow: 2px 2px 2px #000000;">Get Started
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
                   <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
                     <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
@@ -107,7 +107,7 @@
                 <a href="us.html">
                   <h3>Philosophy</h3>
                 </a>
-                <a href="us.html/#history">
+                <a href="us.html#history">
                   <h3>History</h3>
                 </a>
               </div>
@@ -116,34 +116,32 @@
           <li class="l-section section">
             <div class="work">
               <h2>Service Categories</h2>
-              <div class="w3-row" >
-                <div class="w3-half w3-center">
+              <div class="w3-row w3-center">
+                <a href="rec.html" style="text-decoration: none;">
                   <div class="services-box box-1">
                     <h3 >Recruitment</h3>
-                    <p class="services-txt">
-                    
-                    </p>
+                    <!-- <p class="services-txt"></p> -->
                   </div>
+                </a>
+                <a href="biz-mig.html" style="text-decoration: none;">
                   <div class="services-box box-2">
                     <h3 >Business Migration</h3>
-                    <p class="services-txt">
-                    </p>
+                    <!-- <p class="services-txt"></p> -->
                   </div>
-                </div>
-                <div class="w3-half w3-center">
-                  <a href="gen-mig.html" style="text-decoration: none;">
-                    <div class="services-box box-3">
-                      <h3>General Migration</h3>
-                      <p class="services-txt">
-                      </p>
-                    </div>
-                  </a>
+                </a>
+            
+                <a href="gen-mig.html" style="text-decoration: none;">
+                  <div class="services-box box-3">
+                    <h3>General Migration</h3>
+                    <!-- <p class="services-txt"></p> -->
+                  </div>
+                </a>
+                <a href="tech.html" style="text-decoration: none;">
                   <div class="services-box box-4">
                     <h3 >Technology Solutions</h3>
-                    <p class="services-txt">
-                    </p>
+                    <!-- <p class="services-txt"></p> -->
                   </div>
-                </div>
+                </a>  
               </div>
            
               <!-- <div class="work--lockup">
@@ -234,16 +232,16 @@
                     <h3>Global Partnerships</h3>
                   </div>
                   <div class="w3-quarter w3-center">
-                    <h2>8</h2>
-                    <h3>Global Partnerships</h3>
+                    <h2>45+</h2>
+                    <h3>Yrs. Accumulated Experience</h3>
                   </div>
                   <div class="w3-quarter w3-center">
-                    <h2>21</h2>
-                    <h3>Global Partnerships</h3>
+                    <h2>160+</h2>
+                    <h3>Satisfied Customers</h3>
                   </div>
                   <div class="w3-quarter w3-center">
-                    <h2>32</h2>
-                    <h3>Global Partnerships</h3>
+                    <h2>3</h2>
+                    <h3>International Offices</h3>
                   </div>
                 </div>
               </div>
@@ -251,7 +249,8 @@
           </li>
           <li class="l-section section">
             <div class="hire">
-              <h2>Get in Touch with Us About...</h2>
+              <h2>Get Started</h2>
+              <p class="muted">Please select your required service to get in touch</p>
               <!-- checkout formspree.io for easy form setup -->
               <form class="work-request">
                 <div class="work-request--options">
@@ -321,17 +320,73 @@
                   </span>
                 </div>
                 <div class="work-request--information">
-                  <div class="information-name">
-                    <input id="name" type="text" spellcheck="false">
-                    <label for="name">Name</label>
+                  <form action="https://formsubmit.co/CHANGEEMAIL" method="POST">
+                    <div class="information-name">
+                      <input id="name" type="text" spellcheck="false">
+                      <label for="name">Name</label>
+                    </div>
+                    <div class="information-email">
+                      <input id="email" type="email" spellcheck="false">
+                      <label for="email">Email</label>
+                    </div>
+                </div>
+                <input type="submit" class="button" value="Send Request">
+              </form>
+            </div>
+          </li>
+
+          <!-- sitemap -->
+          <li class="l-section section">
+            <div class="sitemap">
+              <div class="w3-content">
+                <div class="w3-row">
+                  <h1>Get in Touch</h1>
+                  <div class="w3-half">
+                    <form action="https://formsubmit.co/CHANGEEMAIL" method="POST">
+                      <p class="muted">Contact</p>
+                      <label>Name *</label>
+                      <input type="text" name="name" required>
+                      <label>E-mail *</label>
+                      <input type="email" name="email" required>
+                      <label>Message</label>
+                      <input type="text" name="message">
+                      <button type="submit">Submit</button>
+                    </form>
                   </div>
-                  <div class="information-email">
-                    <input id="email" type="email" spellcheck="false">
-                    <label for="email">Email</label>
+
+                  <div class="w3-half w3-hide-small">
+                    <p class="muted">Useful Links</p>
+                    <div class="row ">
+                      <div class="half ">
+                        <h3>Consulting</h3>
+                        <a href="#">Book a Call</a>
+                        <a href="#">Consulting Service 2</a>
+                        <a href="#">Consulting Service 3</a>
+              
+                        <h3>Recruitment</h3>
+                        <a href="#">Recruitment Service 1</a>
+                        <a href="#">Recruitment Service 2</a>
+                        <a href="#">Recruitment Service 3</a>
+                      </div>
+
+                      <div class="half">
+                        <h3>Migration</h3>
+                        <a href="biz-mig.html">Business Migration</a>
+                        <a href="gen-mig.html">General Migration</a>
+                        <a href="spon-lic.html">Sponsorship Licence</a>
+  
+                        <h3>Technology</h3>
+                        <a href="hrms.html">HRMS Software</a>
+                        <a href="wd.html">Website Development</a>
+                        <a href="b&l.html">Branding & Logos</a>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <input type="submit" value="Send Request">
-              </form>
+              </div>
+              <div class="footer">
+                Copyright &copy; <script>document.write(new Date().getFullYear())</script> BTR Global.<br><span>Website by <a href="https://wtslondon.co.uk">wts.</a></span>
+              </div>
             </div>
           </li>
         </ul>

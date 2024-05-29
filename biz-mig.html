@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BTR Global</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Offical Website of BTR Global. Explore Our Services Today.">
+  <meta name="keywords" content="BTR, BTR Global, BTR Enterprises, BTR Consulting, Badrul Hussain, Tanvir Tayab, Rafsan Kamal">
+  <meta name="author" content="Web Tech Solutions UK Ltd. - David Dragan">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <style>
+
+
+    button {
+      display:block;
+      padding: 10px;
+      text-align: left;
+      border: none;
+      background: none;
+      color: var(--primary-color);
+    }
+
+    .tablink:hover {
+      background-color: var(--primary-color);
+      color: var(--background-color);
+      text-decoration: underline;
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.show {
+      display: flex;
+    }
+
+    .tab-content .w3-row {
+      display: flex; /* Use flexbox to arrange items */
+      flex-wrap: wrap; /* Allow wrapping to create multiple rows */
+    }
+
+    .tab-content .w3-row .w3-half {
+      width: 50%; /* Each column takes half of the container */
+      box-sizing: border-box; /* Include padding and border in the width calculation */
+    }
+
+    .tab-content .w3-row .w3-half button {
+      width: 100%; /* Buttons take full width of their container */
+    }
+
+  </style>
+</head>
+
+<body>
+<!-- top -->
+<div class="top">
+  <div class="l-wrapper">
+    <header class="header">
+      <a class="header--logo" href="index.html">
+        <p class="font-logo">BTR Global</p>
+      </a>
+
+      <a href="index.html" class="material-symbols-outlined w3-right">
+          undo
+      </a>
+    </header>
+  </div>
+</div>
+<!-- end top -->
+<div class="w3-content">
+  <div class="w3-row">
+    <h2>Business Migration Services</h2>
+    <a href="javascript:void(0)" onclick="openTab(event, 'bizmig');">
+        <div class="w3-third tablink w3-bottombar w3-padding">Business Migration to the UK</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openTab(event, 'spon-lic');">
+      <div class="w3-third tablink w3-bottombar w3-padding">Sponsorship Licence</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openTab(event, 'imig-comp');">
+      <div class="w3-third tablink w3-bottombar w3-padding">Immigration Comnpliance</div>
+    </a>
+  </div>
+
+  <div id="spon-lic" class="w3-container tab-content">
+    
+    <div class="vertical-menu">
+        <h2>Sponsorship Licence</h2>
+        <button onclick="openLink(event, 'sla')">Sponsorship Licence Application</button>
+        <button onclick="openLink(event, 'sls')">Sponsorship Licence Suspension</button>
+        <button onclick="openLink(event, 'slr')">Sponsorship Licence Renewal</button>
+
+    </div>
+  </div>
+
+  <div id="imig-comp" class="w3-container tab-content">
+    <div class="vertical-menu">
+      <h2>Imigration Compliance</h2>
+      <button onclick="openLink(event, 'cp')">Civil Penalty</button>
+      <button onclick="openLink(event, 'rtwc')">Right to Work Check</button>
+      <button onclick="openLink(event, 'hocv')">Home Office Compliance Visit</button>
+    </div>
+  </div>
+
+
+  <div id="bizmig" class="w3-container tab-content">
+    <div class="vertical-menu">
+      <h2>Business Migration</h2>
+      <button onclick="openLink(event, 'biz-mig-uk')">Migrating Your Business to the UK</button>
+      <button onclick="openLink(event, 'biz-mig-eu')">Migrating Your Business to the EU</button>
+      <button onclick="openLink(event, 'biz-mig-dubai')">Migrating Your Business to Dubai</button>
+    </div>
+  </div>
+</div>
+
+<script>
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      // Hide all tab contents
+      tabcontent = document.getElementsByClassName("tab-content");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      // Remove highlighting from all tab links
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace("w3-border-black", ""); 
+      }
+      // Display the content of the clicked tab and highlight the tab link
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.firstElementChild.className += " w3-border-black";
+    }
+
+    function openLink(evt, target) {
+    // Prevent the default action of the event
+    evt.preventDefault();
+    
+    // Get the URL from the target argument
+    var url = "views/" + target.toLowerCase() + ".html";
+    
+    // Open a new tab with the specified URL
+    window.open(url, '_blank');
+}
+
+    
+
+
+</script>
+</body>
+</html>
