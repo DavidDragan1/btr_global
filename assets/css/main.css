@@ -1545,6 +1545,7 @@ body {
     -webkit-transform: translateX(350px) translateZ(-1000px);
     transform: translateX(350px) translateZ(-1000px);
     font-size: 55px;
+    font-family: 'Nesathoberyl-BW9j3';
     font-weight: 900;
     opacity: 0;
     cursor: pointer;
@@ -1562,7 +1563,7 @@ body {
     transition: transform .4s, opacity .4s;
     transition: transform .4s, opacity .4s, -webkit-transform .4s;
 }
-.outer-nav>li::before {
+/* .outer-nav>li::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -1576,7 +1577,14 @@ body {
 }
 .outer-nav>li.is-active::before {
     opacity: 1;
+} */
+
+.outer-nav>li.is-active {
+    text-shadow: 0 0 10px var(--accent-color), 0 0 20px var(--accent-color), 0 0 30px var(--accent-color);
+    transform: scale(1.1);
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
 }
+
 @media (max-width: 767px) {
     .outer-nav>li {
     font-size: 44px;
