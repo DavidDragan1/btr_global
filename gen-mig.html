@@ -51,6 +51,14 @@
       width: 100%; /* Buttons take full width of their container */
     }
 
+    .w3-bottombar {
+      color:var(--primary-color);
+    }
+
+    .w3-content {
+      min-height: 100vh;
+    }
+
   </style>
 </head>
 
@@ -157,6 +165,13 @@
   </div>
 </div>
 
+<footer>
+  <div class="w3-row w3-padding-16 w3-center">
+    <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> BTR Global.</p>
+    <p class="muted w3-center">Website by <a href="https://wtslondon.co.uk">wts.</a></p>
+  </div>
+</footer>
+
 <script>
     function openTab(evt, tabName) {
       var i, tabcontent, tablinks;
@@ -168,11 +183,11 @@
       // Remove highlighting from all tab links
       tablinks = document.getElementsByClassName("tablink");
       for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace("w3-border-black", ""); 
+        tablinks[i].className = tablinks[i].className.replace("w3-border-light-blue", ""); 
       }
       // Display the content of the clicked tab and highlight the tab link
       document.getElementById(tabName).style.display = "block";
-      evt.currentTarget.firstElementChild.className += " w3-border-black";
+      evt.currentTarget.firstElementChild.className += " w3-border-light-blue";
     }
 
     function openLink(evt, target) {
